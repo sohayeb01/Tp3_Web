@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+th {
+    background-color: #4A90E2; 
+    color: white;
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: 2px solid #357ABD;
+}
+
+
+th[style*="writing-mode: vertical-lr"] {
+    background-color: #00C4CC; 
+    color: white;
+    writing-mode: vertical-lr;
+    text-align: center;
+    min-width: 40px;
+    padding: 10px;
+}
+
+
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+
+td:empty {
+    background-color: #f8f9fa;
+}
+
+
+td.back {
+    background-color: #e8f1fd;
+}
+
+
+td:hover {
+    background-color: #dfe9f5;
+}
+
+
+a.modules, a.profs {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a.modules {
+    color: #4A90E2;
+    display: block;
+    margin-bottom: 5px;
+}
+
+a.modules:hover {
+    color: #E94E77;
+}
+
+a.profs {
+    color: #555;
+    font-size: 13px;
+}
+
+a.profs:hover {
+    color: #F5A623; 
+}
+
+
+td[bgcolor="black"] {
+    background-color: #333;
+}
+
+
+@media (max-width: 768px) {
+    table {
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    th[style*="writing-mode: vertical-lr"] {
+        min-width: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        padding: 8px;
+        font-size: 11px;
+    }
+
+    a.modules, a.profs {
+        font-size: 11px;
+    }
+}
